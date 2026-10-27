@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "shop_auto_drop",
+  "version": "${version}",
+  "name": "Shop Auto Drop",
+  "description": "Drops newly received Bone and Bone Meal from inventory while a shop/container GUI stays open.",
+  "authors": ["lponpz"],
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.shopautodrop.ShopAutoDropClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
