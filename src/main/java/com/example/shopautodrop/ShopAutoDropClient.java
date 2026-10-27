@@ -18,7 +18,6 @@ import java.util.Map;
 
 public class ShopAutoDropClient implements ClientModInitializer {
     private static boolean enabled = true;
-    private static final KeyBinding.Category CATEGORY = KeyBinding.Category.MISC;
     private static KeyBinding toggleKey;
     private static final Map<Item, Integer> previousCounts = new HashMap<>();
     private static boolean initialized = false;
@@ -29,7 +28,7 @@ public class ShopAutoDropClient implements ClientModInitializer {
                 "key.shop_auto_drop.toggle",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_O,
-                CATEGORY
+                "category.shop_auto_drop.general"
         ));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
